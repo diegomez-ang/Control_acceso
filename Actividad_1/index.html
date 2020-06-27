@@ -1,0 +1,63 @@
+<!-- Crear una interfaz con HTML y CSS en la cual un usuario ingrese su edad y su
+género.
+ Debe tener un botón el cual al dar clic se debe mostrar un mensaje informativo que
+cumpla con las siguientes validaciones:
+ Si es menor de edad (menor a 18 años): El usuario no puede ingresar al
+establecimiento.
+ Si es mujer deben pagar $10.000 pesos.
+ Si es hombre debe pagar $15.000 pesos.
+ Si no ingresar alguno de los datos, debe mostrar un mensaje de error. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de acceso</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Pompiere&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/875b875fe8.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h2>La AlcaHueta</h2>
+        </div>
+        <i class="fas fa-beer"></i>
+        <div class="control">
+            <p class="controlp"> Control de acceso</p>
+        </div>
+        
+    </header>
+    <main>       
+        <section id="miform">      
+            <p>Ingresa tus datos</p>
+            <div>
+                <input class="entrada"  id="name" placeholder="Nombre"><br>
+                <input class='entrada' id="age" placeholder="Edad">                
+            </div>
+            <div class="cont_genero">
+                <div>
+                <input class="genero" name="genero" id="F" type="radio"><i class="fas fa-female"></i>
+                </div>
+                <div>
+                <input class="genero" name="genero" id="M" type="radio"><i class="fas fa-male"></i>
+            </div>
+            </div>
+            <div>
+                <button type="submit" id="button">Ingresar</button>
+            </div>          
+        </section>
+        <section class="validar">
+            <p id="texto"></p>
+        </section>
+      
+    </main>
+    <footer>
+        <h2>Designed with <i class="fas fa-heartbeat heart"></i> by Yero Web Design</h2>
+        <a target="blank"  href="https://github.com/diegomez-ang"><i class="fab fa-github-square git"></i></a>
+    </footer>
+    
+    <script src="assets/script.js" type="text/javascript"></script>
+</body>
+</html>
